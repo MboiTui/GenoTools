@@ -2,7 +2,7 @@
 Hello! In this repo I collect some of the functions, tools, scripts and handy commands that I use when working on genomic data.
 
 ### VCFTOOLS related scripts
-For now, all this repository contains is a shell script, 0_AddNamesTo012.sh, that takes as input the 3 files produced by vcftools when using the `--012` output format (i.e., filename.012, filename.012.indv and filename.012.pos) and merges them into one file. The three input files contain:
+For now, all this repository contains is a shell script, [0_AddNamesTo012.sh](https://github.com/MboiTui/GenoTools/blob/40933ef5cfdd61b8c44a3672ced2806a68528570/0_AddNamesTo012.sh), that takes as input the 3 files produced by vcftools when using the `--012` output format (i.e., filename.012, filename.012.indv and filename.012.pos) and merges them into one file. The three input files contain:
 
 - **filename.012**: genotyping information in the 012 format, where genotypes are coded as either 0 (homozygote reference), 1 (heterozygote) or 2 (homozygote snp). 
 - **filename.012.indv**: sample IDs of genotyped individuals
