@@ -6,8 +6,8 @@ The only scripts in here now are an awk and python script to calculate the mean,
 This file contains one column, with one integer per base pair, stating the read depth for that base pair from a bam/sam alignment file.
 The output is a table with the filename, followed by the metrics mentioned above. Test it on a small file (< 10.000.000 rows).
 DISCLAIMER: I am pretty new to awk and python scripting (mostly used bash and R only thus far), so please test them thoroughly on a small dataset first.
-- [read_depth_sumamry.awk]()
-- [read_depth_sumamry.py]()
+- [read_depth_sumamry.awk](https://github.com/MboiTui/GenoTools/blob/main/read_depth_summary.awk)
+- [read_depth_sumamry.py](https://github.com/MboiTui/GenoTools/blob/main/read_depth_summary.py)
 
 ### VCF processing scripts
 For now, all this repository contains is a shell script, [0_AddNamesTo012.sh](https://github.com/MboiTui/GenoTools/blob/40933ef5cfdd61b8c44a3672ced2806a68528570/0_AddNamesTo012.sh), that takes as input the 3 files produced by vcftools when using the `--012` output format (i.e., filename.012, filename.012.indv and filename.012.pos) and merges them into one file. The three input files contain:
