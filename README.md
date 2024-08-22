@@ -3,7 +3,7 @@ Hello! In this repo I collect some of the functions, tools, scripts and handy co
 
 ### Calculate SFS across windows in the genome
 This script estimates the sfs for pre-defined windows along the genome. Required inputs are a bed file for each chromosome stating listing the windows of interest in the format `chromosome\tstart\tend`, the reference fasta file, the ancestral fasta file (can be replaced with the refence file for folded sfs), and a list of bamfiles for individuals to use. 
-- [sfs_across_windows]()
+- [window_sfs.sh](https://github.com/MboiTui/GenoTools/blob/main/window_sfs.sh)
 
 The output of this script can then be used as input into David Marques' python [script](https://github.com/marqueda/PopGenCode/blob/master/dxy_wsfs.py) to calculate Dxy from the sfs.
 
