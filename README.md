@@ -1,6 +1,12 @@
 # GenoTools
 Hello! In this repo I collect some of the functions, tools, scripts and handy commands that I use when working on genomic data.
 
+### Calculate SFS across windows in the genome
+This script estimates the sfs for pre-defined windows along the genome. Required inputs are a bed file for each chromosome stating listing the windows of interest in the format `chromosome\tstart\tend`, the reference fasta file, the ancestral fasta file (can be replaced with the refence file for folded sfs), and a list of bamfiles for individuals to use. 
+- [sfs_across_windows]()
+
+The output of this script can then be used as input into David Marques' python [script](https://github.com/marqueda/PopGenCode/blob/master/dxy_wsfs.py) to calculate Dxy from the sfs.
+
 ### SAM/BAM scripts
 The only scripts in here now are an awk and python script to calculate the mean, stdev, non-zero mean, median, non-zero count, and genome coverage proportions from the output of `samtools depth`. I produced them to be used as part of the [lcWGS tutorial](https://github.com/nt246/lcwgs-guide-tutorial/blob/main/tutorial1_data_processing/markdowns/data_processing.md#estimate-read-depth-in-your-bam-files) by the Therdilksen lab, to assess read depth per sample before estimating genotype likelihoods.
 This file contains one column, with one integer per base pair, stating the read depth for that base pair from a bam/sam alignment file.
